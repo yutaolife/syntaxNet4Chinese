@@ -9,7 +9,9 @@
 ###  林毅
 ###  于涛
 ###  Stanford NLP Group
-###  dsindex github.com/dsindex
+在一个无意间发现了Stanford NLP Group的项目组，他们的研究项目，给了我们这个研究极大的贡献，在阅读了他们的论文以后，得到了很多的启发，以至于帮助我们解决很多的困难。项目组地址： https://nlp.stanford.edu/  
+###  dsindex 
+dsindex 地址：http://github.com/dsindex/syntaxnet 同样是一个用SyntaxNet完成韩语的语义训练，从他们的项目里面，我们深刻的理解到SyntaxNet的一些工作方式，也同样是他的项目，让我们有了一些新的启发，完成了我们对于中文语义分析的想法。
 ###  Google tensorflow/SyntaxNet
 ## SyntaxNet安装
 ## 快速理解SyntaxNet
