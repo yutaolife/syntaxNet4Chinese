@@ -5,7 +5,12 @@
 
 # 目录
 ## 特别鸣谢
-
+我们特别感谢每一位对于自然语言分析贡献过的每一位科学研究人员，虽然没有和你们有过任何的接触，但是你们的文章，你们所贡献出来的内容，深深的值得我们学习。我们自称为工匠，我们努力着为自然语言分析提供一点点微薄的贡献。
+###  林毅
+###  于涛
+###  Stanford NLP Group
+###  dsindex github.com/dsindex
+###  Google tensorflow/SyntaxNet
 ## SyntaxNet安装
 ## 快速理解SyntaxNet
 ## Stanford NLP Group
