@@ -22,7 +22,7 @@
 dsindex 地址：http://github.com/dsindex/syntaxnet 同样是一个用SyntaxNet完成韩语的语义训练，从他的项目里面，我们深刻的理解到SyntaxNet的一些工作方式，也同样是他的项目，让我们有了一些新的启发，完成了我们对于中文语义分析的想法。
 ###  Google tensorflow/SyntaxNet
 Google Tensorflow/SyntaxNet 一个伟大的项目，我们非常的感谢提供了这样一个平台，让我们可以在一条高速发展的道路上面前进。
-## SyntaxNet安装
+## [SyntaxNet安装](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/installSyntaxNet/install_tensorflow_syntaxNet_guide.md)
 ## 快速理解SyntaxNet
 ## Stanford NLP Group
 ## 准备语料库（TXT）
