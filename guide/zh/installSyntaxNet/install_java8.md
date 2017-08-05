@@ -27,8 +27,9 @@ vi /etc/profile.d/java.sh
 在新的java.sh中输入以下内容：
 ```
 #set java environment
-export JAVA_HOME=/usr/java/jdk180144
-export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+export JAVA_HOME=/usr/java/jdk180111
+export JRE_16=$JAVA_HOME/jre
+export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 ```
 保存退出
