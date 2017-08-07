@@ -51,7 +51,7 @@
 然后通过 googleapis.com 上找到与自己系统和python版本相匹配的whl形式tensorflow安装文件。</br>
 
 例如，我们的Ubuntu系统有python2.7版本，相对应的安装指令为：
-> sudo -H pip install --upgrade（一个空格后接着） https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.0-cp27-none-linux_x86_64.whl
+>   sudo -H pip install --upgrade \       https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.0-cp27-none-linux_x86_64.whl
 
 然后就成功了，写成其他的cp（py3.x）版本都不行，因为电脑是python2.7，尝试了cp27-cp27m也不行，只有cp27-none可以，系统也不能写错，不然都出现“xxx is not a supported wheel on this platform.”
 #### 找符合环境的安装url
@@ -85,3 +85,16 @@ https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.1-cp36-cp
 **如果以上列举的都不符合您的环境**，要寻找符合系统和python版本的tensorflow URL, 可以到
 https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_python_package
 直接跳到 “The URL of the TensorFlow Python package” 章节。</br>
+
+### 初步检测tensorflow是否安装成功
+
+参照官网 tensorflow.org 例子，在完成安装步骤之后，可以按以下步骤尝试第一个tensorflow小短程序：
+1. 打开终端，输入python
+>     import tensorflow as tf
+>     hello = tf.constant('Hello, TensorFlow!')
+>     sess = tf.Session()
+>     print(sess.run(hello))
+
+如果输出
+>     Hello, TensorFlow!
+那么安装成功，可以开始使用tensorflow。
