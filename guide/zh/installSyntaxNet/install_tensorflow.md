@@ -23,17 +23,22 @@
 1. 最先用
 > sudo pip install --upgrade pip
 
-报错。
+报错。</br>
+
 2. 依照官网 tensorflow.org，
 
 > sudo pip install -U pip
 
-也不行。
-3. 于是，我们选择从pip官网下载最新可用的pip，即从 pypi.python.org/pypi/pip 下载，注意选择与电脑系统和python版本相应的pip。例如，我们选择的是python2.7可用的9.0.1版本pip。
+也不行。</br>
+
+
+3. 于是，我们选择从pip官网下载最新可用的pip，即从 pypi.python.org/pypi/pip 下载，注意选择与电脑系统和python版本相应的pip。例如，我们选择的是python2.7可用的9.0.1版本pip。</br>
+
+
 4. 下载之后，安装：
 >sudo -H pip install pip-9.0.1-py2.py3-none-any.whl
 
-之后显示usccessfully installed, 安装pip 9.0.1版本成功。
+之后显示usccessfully installed, 安装pip 9.0.1版本成功。</br>
 
 
 ### 用pip装wheel：
@@ -95,6 +100,6 @@ https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_pytho
 >     sess = tf.Session()
 >     print(sess.run(hello))
 
-如果输出
+2. 如果输出
 >     Hello, TensorFlow!
 那么安装成功，可以开始使用tensorflow。
