@@ -31,6 +31,6 @@ Google Tensorflow/SyntaxNet 一个伟大的项目，我们非常的感谢提供�
 ## 快速理解SyntaxNet
 ## Stanford NLP Group
 ## 准备语料库（TXT）
-## 准备conllu文件
+## [准备conllu文件](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/conllu/conllu.md)
 ## 训练开始
 ## 提取/测试中文语义
