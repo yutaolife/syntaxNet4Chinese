@@ -9,7 +9,27 @@
 ### 为安装syntaxnet做准备：
 #### 安装Bazel
 
-在某种情况下面，Bazel无法安装上去，一直提示要安装:  
+在某种情况下面，Bazel无法安装上去，一直提示要安装: 
+```
+(Reading database ... 104532 files and directories currently installed.)
+Preparing to unpack bazel_0.5.3-linux-x86_64.deb ...
+Unpacking bazel (0.5.3) over (0.5.3) ...
+dpkg: dependency problems prevent configuration of bazel:
+ bazel depends on google-jdk | java8-jdk | java8-sdk | oracle-java8-installer; h                                                                         owever:
+  Package google-jdk is not installed.
+  Package java8-jdk is not installed.
+  Package java8-sdk is not installed.
+  Package oracle-java8-installer is not installed.
+ bazel depends on zlib1g-dev; however:
+  Package zlib1g-dev:amd64 is not configured yet.
+
+dpkg: error processing package bazel (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ bazel
+```
+又或者如下错误：  
+
 ```
 dpkg: error processing archive /var/cache/apt/archives/openjdk-9-jdk_9~b114-0ubuntu1_i386.deb (--unpack):
 ```
