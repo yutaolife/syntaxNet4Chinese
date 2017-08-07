@@ -4,6 +4,8 @@
 
 通俗的总结来说，要做语义分析来讲，要么得到语义树，要么就得到Conll的文件。拿到这些才可以去分析，语义的表达。</br>
 
+stackoverflow.com有[What is CoNLL data format?](https://stackoverflow.com/questions/27416164/what-is-conll-data-format)也有简单的问答</br>
+
 Conll 2017 share task:http://www.conll.org/
 
 # 如何生成Conllu文件
