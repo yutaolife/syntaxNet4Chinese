@@ -10,14 +10,14 @@
 一般可以先尝试官方安装说明的指令pip install tensorflow,
 但如果报错，说明相关环境不满足条件，可以参考下面我们经过的步骤。</br>
 
-###安装pip和相关工具
+### 安装pip和相关工具
 ---
 首先，需要为Ubuntu安装pip，在终端里指令：
 > sudo apt-get install python-pip python-dev
 
 注意这是属于Ubuntu的command。</br>
 
-###升级pip
+### 升级pip
 ---
 有了pip，需要为Ubuntu升级pip，经过我们的尝试，各种tutorials上面提及的方法并没有都成功。</br>
 1. 最先用
@@ -34,8 +34,9 @@
 >sudo -H pip install pip-9.0.1-py2.py3-none-any.whl
 
 之后显示usccessfully installed, 安装pip 9.0.1版本成功。
-</br>
-###用pip装wheel：
+
+
+### 用pip装wheel：
 ---
 已下载的pip和最终需要安装的tensorflow都以whl形式出现。我们面对的下一个问题是whl的upgrade，只需要很简单的一步：
 > pip install wheel
@@ -45,7 +46,7 @@
 
 </br>
 
-###安装tensorflow
+### 安装tensorflow
 ---
 然后通过 googleapis.com 上找到与自己系统和python版本相匹配的whl形式tensorflow安装文件。</br>
 
@@ -53,7 +54,7 @@
 > sudo -H pip install --upgrade（一个空格后接着） https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.0-cp27-none-linux_x86_64.whl
 
 然后就成功了，写成其他的cp（py3.x）版本都不行，因为电脑是python2.7，尝试了cp27-cp27m也不行，只有cp27-none可以，系统也不能写错，不然都出现“xxx is not a supported wheel on this platform.”
-####找符合环境的安装url
+#### 找符合环境的安装url
 根据操作系统，python版本，和cpu/gpu支持，确定您需要的URL：
 例如:
 
@@ -75,6 +76,11 @@ https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.1-cp35-cp35m-
 python 3.5 + gpu
 https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.1-cp35-cp35m-linux_x86_64.whl
 
+python 3.6 + cpu
+https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.1-cp36-cp36m-linux_x86_64.whl
+
+python 3.6 + gpu
+https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.1-cp36-cp36m-linux_x86_64.whl
 
 **如果以上列举的都不符合您的环境**，要寻找符合系统和python版本的tensorflow URL, 可以到
 https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_python_package
