@@ -1,5 +1,6 @@
 # 什么是 Conll 文件
 简单的说明和介绍一下，由于CoNLL是每年不同的共享任务，所以有很多不同的CoNLL格式。Conll 2009的格式介绍在[这里](http://ufal.mff.cuni.cz/conll2009-st/task-description.html)。每一行代表着一个单词，由制表符分隔，并对于这个单词的词性简单分析。</br>
+
 本次，我们所使用的是Conll-U格式的文件。可以在[这里](http://universaldependencies.github.io/docs/format.html)找到更多的说明。</br>
 
 通俗的总结来说，要做语义分析来讲，要么得到语义树，要么就得到Conll的文件。拿到这些才可以去分析，语义的表达。</br>
