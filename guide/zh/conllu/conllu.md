@@ -14,7 +14,7 @@
 java -mx1g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLP -props StanfordCoreNLP-chinese.properties -annotators tokenize,ssplit,pos,depparse -file chinese.txt -outputFormat conllu
 ```
 请注意：</br>
-chinese.txt的文件是你的语料库，以每一句话做为一行，但是请把分完词的结果，传给standford NLP，然后它可以自动产生Conllu方件。</br>
+chinese.txt的文件是你的语料库，以每一句话做为一行，但是请把**分完词后**的结果写入这个文件，然后传给standford NLP，然后它可以自动产生Conllu方件。</br>
 
 比如：chinese.txt文件是：</br>
 原句为： 核心主题就是绝不能以牺牲生态环境为代价换取经济的一时发展。</br>
