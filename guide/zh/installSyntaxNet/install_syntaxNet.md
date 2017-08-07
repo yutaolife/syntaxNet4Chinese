@@ -7,3 +7,13 @@
 
 下面我们开始。
 ### 为安装syntaxnet做准备：
+#### 安装Bazel
+在某种情况下面，Bazel无法安装上去，一直提示要安装:  
+```
+
+```
+
+可以采用以下解法：
+```
+sudo apt-get -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
+```
