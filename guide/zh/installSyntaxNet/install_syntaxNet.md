@@ -8,9 +8,10 @@
 下面我们开始。
 ### 为安装syntaxnet做准备：
 #### 安装Bazel
+
 在某种情况下面，Bazel无法安装上去，一直提示要安装:  
 ```
-
+dpkg: error processing archive /var/cache/apt/archives/openjdk-9-jdk_9~b114-0ubuntu1_i386.deb (--unpack):
 ```
 
 可以采用以下解法：
