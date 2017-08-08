@@ -6,7 +6,7 @@
 （官方介绍 https://github.com/tensorflow/models/tree/master/syntaxnet）</br>
 
 下面我们开始。
-### 为安装syntaxnet做准备：
+## 一、为安装syntaxnet做准备：
 #### 安装Bazel
 
 在某种情况下面，Bazel无法安装上去，一直提示要安装:
@@ -38,10 +38,8 @@ dpkg: error processing archive /var/cache/apt/archives/openjdk-9-jdk_9~b114-0ubu
 ```
 sudo apt-get -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
 ```
-## 一、为安装syntaxnet做准备：
-1. python 安装</br>
-  * python 3 在ubuntu上不支持，我们选择2.7版本</br>
-2. 安装 bazel
+
+
   * 方法一：在 bazel官网 https://docs.bazel.build/versions/master/install.html ，选择和操作系统相配的安装方式。</br>
 这个官网说明上关于ubuntu的安装步骤很多，尤其要先处理 jdk 8 的问题。
 * 方法二：从 https://github.com/bazelbuild/bazel/releases 选择合适的 .deb 后缀文件，下载后在终端里安装：
@@ -49,7 +47,7 @@ sudo apt-get -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
 
   例如，我们为ubuntu linux选择了 “bazel_0.5.3-linux-x86_64.deb”。
 * 安装 bazel 成功后，在终端输入 bazel version 应显示已安装的版本号。</br>
-3. 安装 swig: </br>
+#### 安装 swig: </br>
 【swig 是个帮助使用C或者C++编写的软件能与其它各种高级编程语言进行嵌入联接的开发工具。摘自swig中文网】
 * 在ubuntu系统上：
     >   apt-get install swig
@@ -58,7 +56,7 @@ sudo apt-get -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
     > brew install swig
 </br>
 
-4. 安装protocol buffer：
+#### 安装protocol buffer：
 * 官方的 syntaxnet 并没有讲如何安装，因为默认在此之前我们已经在安装 tensorflow 时有了 protocol, 安装不难：
   * 注意，相对应 python 2.7版本
   * pip install --upgrade \
@@ -71,20 +69,20 @@ sudo apt-get -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
 
 升级到 syntaxnet 需要的版本 3.3.0. </br>
 
-5. 安装测试工具mock:
+#### 安装测试工具mock:
 >pip install mock </br>
 
-6. asciitree, 语义分析树，一种我们喜闻乐见的输出格式：
+#### asciitree, 语义分析树，一种我们喜闻乐见的输出格式：
 >pip install asciitree
 
-7. numpy, 久仰大名的 python 包：
+#### numpy, 久仰大名的 python 包：
 >pip install numpy
 
 * 这里比较棘手的问题是，有时候电脑之前安装的numpy不能卸载，而更新版本就会报错。解决的方式有 </br>
   * （1）在指令后添加 --ignore-installed
   * （2）接触系统对卸载旧版本的限制，如在mac上reboot，长按command+r，终端输csrutil disable, 重启后就可以卸载了。</br>
 
-8. 安装 pygraphviz 这样我们就能看到输出的asciitree了：
+#### 安装 pygraphviz 这样我们就能看到输出的asciitree了：
   >    apt-get install -y graphviz libgraphviz-dev </br>
   >    pip install pygraphviz --install-option="--include-path=/usr/include/graphviz" --install-option="--library-path=/usr/lib/graphviz/"
 
