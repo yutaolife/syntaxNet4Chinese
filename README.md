@@ -29,7 +29,7 @@ dsindex 地址：http://github.com/dsindex/syntaxnet 同样是一个用SyntaxNet
 ###  Google tensorflow/SyntaxNet
 Google Tensorflow/SyntaxNet 一个伟大的项目，我们非常的感谢提供了这样一个平台，让我们可以在一条高速发展的道路上面前进。
 ## [SyntaxNet安装](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/installSyntaxNet/install_tensorflow_syntaxNet_guide.md)
-## 快速理解SyntaxNet
+## [快速理解SyntaxNet](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/syntaxNet_guide/understanding.md)
 ## Stanford NLP Group
 ## 准备语料库（TXT）
 ## [准备conllu文件](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/conllu/conllu.md)
