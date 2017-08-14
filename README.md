@@ -31,7 +31,7 @@ Google Tensorflow/SyntaxNet 一个伟大的项目，我们非常的感谢提供�
 ## [SyntaxNet安装](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/installSyntaxNet/install_tensorflow_syntaxNet_guide.md)
 ## [快速理解SyntaxNet](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/syntaxNet_guide/understanding.md)
 ## Stanford NLP Group
-## 准备语料库（TXT）
+## [准备语料库（TXT）](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/prepareCorpus/corpus.md)
 ## [准备conllu文件](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/conllu/conllu.md)
 ## 训练开始
 ## 提取/测试中文语义
