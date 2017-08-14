@@ -11,7 +11,8 @@ Conll 2017 share task:http://www.conll.org/
 
 # 如何生成Conllu文件
 ## 第一种方式 手工生成
-not ready
+手工生的Conllu方件，你可以参考这个Tutorial: http://universaldependencies.org/eacl17tutorial/
+
 
 ## 第二种方式 机器生成
 采用机器生成Conllu,本文采用Stanford NLP的工具包来生成Conllu的文件。</br>
