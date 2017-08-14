@@ -72,4 +72,27 @@ Turkish | 8616 | 93.63% | 92.62% | 86.79% | 82.00% | 71.37%
 **LAS**：labeled Attachment/Accuracy Score</br>
 
 # 为什么我们会关注SyntaxNet
+国内关注语义分析大多数都是机器翻译这个领域，但是我们想做到通知Google SyntaxNet来完成对于说这些话的人的肖像描述。当然，可能会有很多种方法，很多种的数据可以做人物画像。可是我们的研究，或者我们所想像到的，最直接的肖像建立，无非是从表达的方式，对某一件事情的表达，最能够刻画出来人物的肖像。</br>
+
+另外，一套成熟的语义模型，需要大量的人力，物力来完成。而在此时，Google SyntaxNet恰恰开源了这个项目，我们想从这个项目当中，理解或者研究出来一套理论。</br>
+
 # 快速理解SyntaxNet的工作方式
+## 现有模型的使用
+如果你认为现有的Google SyntaxNet分布的语义模型，可以达到你的使用的话，完全可以用现有的模型去使用。</br>
+Many of these models also support text segmentation, with:</br>
+Text segmentation is currently available for: Bulgarian, Czech, German, Greek, English, Spanish, Estonian, Basque, Persian, Finnish, Finnish-FTB, French, Galician, Ancient_Greek, Ancient_Greek-PROIEL, Hebrew, Hindi, Croatian, Hungarian, Indonesian, Italian, Latin, Latin-PROIEL, Dutch, Norwegian, Polish, Portuguese, Slovenian, Swedish, Tamil.</br>
+```
+MODEL_DIRECTORY=/where/you/unzipped/the/model/files
+ cat sentences.txt | syntaxnet/models/parsey_universal/tokenize.sh \
+   $MODEL_DIRECTORY > output.conll
+```
+
+对于繁体中文的语言：</br>
+For Chinese (traditional) we use a larger text segmentation model, which can be run with:</br>
+```
+MODEL_DIRECTORY=/where/you/unzipped/the/model/files
+ cat sentences.txt | syntaxnet/models/parsey_universal/tokenize_zh.sh \
+   $MODEL_DIRECTORY > output.conll
+```
+
+## 训练新的模型
