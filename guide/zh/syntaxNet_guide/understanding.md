@@ -4,6 +4,7 @@
 # 什么是SyntaxNet
 很多人在问，以至于很多人都想知道SyntaxNet到底是什么。 网易上面有一篇文章《[深度解读谷歌SyntaxNet：全新TensorFlow自然语言处理模型](http://digi.163.com/16/0517/19/BN9S2KU100162OUT.html)》介绍的非常的详细。</br>
 总而言之，言而总之，SyntaxNet是语义分析模型，它现在支持[40种语言](https://github.com/tensorflow/models/blob/master/syntaxnet/g3doc/universal.md)。</br>
+
 Language | No. tokens | POS | fPOS | Morph | UAS | LAS
 --------  | :--: | :--: | :--: | :--: | :--: | :--:
 Ancient_Greek-PROIEL | 18502 | 97.14% | 96.97% | 89.77% | 78.74% | 73.15%
@@ -59,6 +60,7 @@ Swedish | 20377 | 96.27% | 94.13% | 94.14% | 83.84% | 80.28%
 Tamil | 1989 | 79.29% | 71.79% | 75.97% | 64.45% | 55.35%
 Turkish | 8616 | 93.63% | 92.62% | 86.79% | 82.00% | 71.37%
 **Average** | - | 94.27% | 92.93% | 90.38% | 81.12% | 75.85%
+
 
 **请注意**：</br>
 表格是SyntaxNet里面所提到的已经支持的语义模型，我们会看到里面提到了**Chinese**，可是在这里，我需要解释一下，这个Chinese是繁体中文（Traditional Chinese）,并不是我们所熟知的简体中文（Simplified Chinese）。所以目前的语义分析模型，我们不能直接拿过来使用。
