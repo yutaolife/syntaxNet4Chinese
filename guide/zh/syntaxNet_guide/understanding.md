@@ -4,8 +4,8 @@
 # 什么是SyntaxNet
 很多人在问，以至于很多人都想知道SyntaxNet到底是什么。 网易上面有一篇文章《[深度解读谷歌SyntaxNet：全新TensorFlow自然语言处理模型](http://digi.163.com/16/0517/19/BN9S2KU100162OUT.html)》介绍的非常的详细。</br>
 总而言之，言而总之，SyntaxNet是语义分析模型，它现在支持[40种语言](https://github.com/tensorflow/models/blob/master/syntaxnet/g3doc/universal.md)</br>。
-|Language	|No. tokens|	POS|	fPOS|	Morph|	UAS|	LAS|
-| ------- |:-------:|:-------:|:-------:|:-------:|:-------:|-------:|
+Language	|No. tokens|	POS|	fPOS|	Morph|	UAS|	LAS
+------- |-------|-------|-------|-------|-------|-------
 |Ancient_Greek-PROIEL|	18502|	97.14%	|96.97%|	89.77%	|78.74%|	73.15%|
 |Ancient_Greek|	25251| 93.22%|84.22%|90.01%|68.98%|62.07%|
 Arabic|28268|95.65%|91.03%|91.23%|81.49%|75.82%|
