@@ -103,3 +103,29 @@ https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_pytho
 2. 如果输出
 >     Hello, TensorFlow!
 那么安装成功，可以开始使用tensorflow。
+
+### 测试警报
+
+如果在测试安装是否成功的过程当中，报如下警报，你可以选择忽略，或者修正如下错误：
+
+```
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.<span style="white-space:pre">
+```
+
+1. 卸载原来安装的tensorflow:
+```
+sudo pip uninstall tensorflow  
+```
+或者：
+```
+sudo -H pip uninstall tensorflow  
+```
+2. 克隆Tensorflow仓库：
+```
+git clone https://github.com/tensorflow/tensorflow 
+```
