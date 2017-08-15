@@ -106,8 +106,8 @@ https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_pytho
 
 ### 测试警报
 
-如果在测试安装是否成功的过程当中，报如下警报，你可以选择忽略，或者修正如下错误：
-
+如果在测试安装是否成功的过程当中，报如下警报，你可以选择忽略，或者修正如下错误：</br>
+我的tensorflow在安装的时候采用的pip install指令，这种安装方式会存在这种问题。主要有两种解决方法，一种是修改警告信息的显示级别，使这种信息不再出现，另外一种就是自己重新编译安装ｔｅｎｓｏｒｆｌｏｗ，在编译的时候使用这些指令集。这里我尝试第二种解决方法。并且由于我的机器上没有高效的ＧＰＵ，所以我尝试安装的是CPU版本。
 ```
 W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
 W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
