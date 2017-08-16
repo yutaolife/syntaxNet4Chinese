@@ -1,12 +1,16 @@
 # syntaxNet4Chinese
 
-简体中文模型已经**训练成功**，语义树与语义表建立正确！！！！！
-
 本文档涉及的内容全部为公开讨论，意旨在快速理解SyntaxNet的工作方式。
 希望可以通过我们的研究，推进SyntaxNet对于中文的处理。
 
 **备注：**  
 我们依然还有不明白的地方，同样也希望有志之士可以告诉，并帮助我们。
+
+# 训练成果
+
+简体中文模型已经**训练成功**，语义树与语义表建立正确！！！！！
+
+![语义树](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/IMG/result.PNG)
 
 
 # 目录
