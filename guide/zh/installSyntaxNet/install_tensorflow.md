@@ -103,3 +103,52 @@ https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_pytho
 2. 如果输出
 >     Hello, TensorFlow!
 那么安装成功，可以开始使用tensorflow。
+
+### 测试警报
+
+如果在测试安装是否成功的过程当中，报如下警报，你可以选择忽略，或者修正如下错误：</br>
+我的tensorflow在安装的时候采用的pip install指令，这种安装方式会存在这种问题。主要有两种解决方法，一种是修改警告信息的显示级别，使这种信息不再出现，另外一种就是自己重新编译安装ｔｅｎｓｏｒｆｌｏｗ，在编译的时候使用这些指令集。这里我尝试第二种解决方法。并且由于我的机器上没有高效的ＧＰＵ，所以我尝试安装的是CPU版本。
+```
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.<span style="white-space:pre">
+```
+
+1. 卸载原来安装的tensorflow:
+```
+sudo pip uninstall tensorflow  
+```
+或者：
+```
+sudo -H pip uninstall tensorflow  
+```
+2. 克隆Tensorflow仓库：
+```
+git clone https://github.com/tensorflow/tensorflow 
+```
+3. configura tensorflow:
+```
+cd tensorflow
+./configure
+```
+
+4. 基于你的需求来添加编译参数：
+```
+bazel build -c opt --copt=-msse3 --copt=-msse4.1 --copt=-msse4.2 --copt=-mavx --copt=-mavx2 --copt=-mfma //tensorflow/tools/pip_package:build_pip_package
+```
+5. 打包：
+```
+bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg  
+```
+6. 安装：
+需要说明的是，由于平台的不同，可能软件包的名字是不一样的。
+```
+sudo pip install /tmp/tensorflow_pkg/tensorflow-1.1.0rc1-cp27-cp27mu-linux_x86_64.whl  
+```
+或者：
+```
+sudo -H pip install /tmp/tensorflow_pkg/tensorflow-1.1.0rc1-cp27-cp27mu-linux_x86_64.whl  
+```
