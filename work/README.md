@@ -4,6 +4,11 @@
 # 如何使用（未完成）
 1， git</br>
 2,  配置</br>
+
+配置是一个简单的过程，Google已经把配置文件做的非常的简单。</br>
+首先，我们需要去准备我们的三个文件。 train.conll, dev.conll 和 test.conll.这些文件的生成，请参考[准备conllu文件](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/conllu/conllu.md)</br>
+其次，按照Google官方的定义，在训练一个新的模型之间，请先编辑修改context.pbtxt的文件。在我的项目当中，这个文件的路径，我放在了UD_Chinese下面。</br>
+
 3， 训练</br>
 当上述步骤与过程，全部都配置好以后，就可以开始正式训练了
 ```
