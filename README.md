@@ -33,5 +33,5 @@ Google Tensorflow/SyntaxNet 一个伟大的项目，我们非常的感谢提供�
 ## Stanford NLP Group
 ## [准备语料库（TXT）](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/prepareCorpus/corpus.md)
 ## [准备conllu文件](https://github.com/yutaolife/syntaxNet4Chinese/blob/master/guide/zh/conllu/conllu.md)
-## 训练开始
+## [训练开始](https://github.com/yutaolife/syntaxNet4Chinese/tree/master/work)
 ## 提取/测试中文语义
