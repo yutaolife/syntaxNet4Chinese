@@ -129,15 +129,21 @@ sudo -H pip uninstall tensorflow  
 ```
 git clone https://github.com/tensorflow/tensorflow 
 ```
-3. 基于你的需求来添加编译参数：
+3. configura tensorflow:
+```
+cd tensorflow
+./configure
+```
+
+4. 基于你的需求来添加编译参数：
 ```
 bazel build -c opt --copt=-msse3 --copt=-msse4.1 --copt=-msse4.2 --copt=-mavx --copt=-mavx2 --copt=-mfma //tensorflow/tools/pip_package:build_pip_package
 ```
-4. 打包：
+5. 打包：
 ```
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg  
 ```
-5. 安装：
+6. 安装：
 需要说明的是，由于平台的不同，可能软件包的名字是不一样的。
 ```
 sudo pip install /tmp/tensorflow_pkg/tensorflow-1.1.0rc1-cp27-cp27mu-linux_x86_64.whl  
