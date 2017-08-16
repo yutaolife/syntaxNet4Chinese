@@ -14,8 +14,24 @@
 ```
 ./train.sh -v -v
 ```
-结果如下：
-
+输出结果示例如下：
+```
+...
+#pretrain parser
+...
+#evaluate pretrained parser
+INFO:tensorflow:Seconds elapsed in evaluation: 44.15, eval metric: 92.21%
+INFO:tensorflow:Seconds elapsed in evaluation: 5.56, eval metric: 87.84%
+INFO:tensorflow:Seconds elapsed in evaluation: 5.43, eval metric: 86.56%
+...
+#train parser
+...
+#evaluate parser
+INFO:tensorflow:Seconds elapsed in evaluation: 279.04, eval metric: 94.60%
+INFO:tensorflow:Seconds elapsed in evaluation: 33.19, eval metric: 88.60%
+INFO:tensorflow:Seconds elapsed in evaluation: 32.57, eval metric: 87.77%
+...
+```
 
 4， 测试</br>
 训练完成以后，程序会自动退出。执行以下代码，可以看到输入的语义树：</br>
@@ -38,4 +54,4 @@ Parse:
 ```
 
 **备注**：</br>
-因为我不用syntaxNet做分词，所以我传入之前会把分主词以后的结果交给syntaxNet。所以大家会看到echo后面全部都是分词后的句子。
+因为我不用syntaxNet做分词，所以我传入之前会把分词以后的结果交给syntaxNet。所以大家会看到echo后面全部都是分词后的句子。
